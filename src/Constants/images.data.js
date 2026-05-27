@@ -14,6 +14,11 @@ import hero12 from '../assets/hero/hero-12.avif';
 import hero13 from '../assets/hero/hero-13.avif';
 import hero14 from '../assets/hero/hero-14.avif';
 
+import featured1 from '../assets/featured/featured-1.avif';
+import featured2 from '../assets/featured/featured-2.avif';
+import featured3 from '../assets/featured/featured-3.avif';
+import featured4 from '../assets/featured/featured-4.avif';
+
 
 export const IMAGES = {
     HEROBG: heroBG,
@@ -31,4 +36,8 @@ export const IMAGES = {
     HERO12: hero12,
     HERO13: hero13,
     HERO14: hero14,
+    FEATURED1: featured1,
+    FEATURED2: featured2,
+    FEATURED3: featured3,
+    FEATURED4: featured4,
 };

@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from '../../Components/common/Navbar'
 import HeroFloatingImages from '../../Components/motion/HeroFloatingImages'
 import { IMAGES } from '../../Constants/images.data'
-import { motion, scale } from 'motion/react'
+import { motion, scale, useScroll, useTransform } from 'motion/react'
+import Featured from '../Featured/Featured'
+import { parallaxImageData } from '../../Constants/ParallaxImageData'
 
 const container = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: {staggerChildren: .3, delayChildren: .8} }
+    visible: { opacity: 1, transition: {staggerChildren: .3, delayChildren: .7} }
 }
 
  const items = {
@@ -15,9 +17,35 @@ const container = {
  }
 
 const Hero = () => {
+
+    const mainRef = useRef(null);
+
+    const section = 6;
+
+    const { scrollYProgress } = useScroll(
+        {
+            target: mainRef,
+            offset: ["start start","end end"]
+        }
+    );
+
+    const scaleHero = useTransform(
+        scrollYProgress,
+        [0, 1.5 / section, 3 / section, 6 / section],
+        [1, 0.5, 0.5, 1]
+    );
+
+    const imageYParallax = parallaxImageData.map(({y}) => useTransform(
+        scrollYProgress,
+        [0, 1],
+        y
+    ))
+
   return (
-    <section className='px-5 py-5'>
-        <div className='bg-[linear-gradient(180deg,#056b57_0%,#005141_100%)] h-[95vh] border-8 border-[#056b57] rounded-4xl'>
+    <section ref={mainRef} className='px-5 py-5'>
+        <motion.div 
+        style={{ scale: scaleHero }}
+        className='bg-[linear-gradient(180deg,#056b57_0%,#005141_100%)] h-[95vh] border-8 border-[#056b57] rounded-4xl sticky top-5'>
 
             <div className='relative w-full h-full overflow-hidden rounded-4xl'>
             <div className=''>
@@ -72,6 +100,12 @@ const Hero = () => {
 
 
 
+        </motion.div>
+
+        <div className='h-dvh'/>
+
+        <div className='relative'>
+        <Featured imageYParallax={imageYParallax}/>
         </div>
     </section>
   )
