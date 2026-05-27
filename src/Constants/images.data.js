@@ -19,6 +19,15 @@ import featured2 from '../assets/featured/featured-2.avif';
 import featured3 from '../assets/featured/featured-3.avif';
 import featured4 from '../assets/featured/featured-4.avif';
 
+import timeChart from '../assets/time/chart.jpg';
+import timeBrand1 from '../assets/time/time-brand1.avif';
+import timeBrand2 from '../assets/time/time-brand2.avif';
+import timeBrand3 from '../assets/time/time-brand3.avif';
+import timeBrand4 from '../assets/time/time-brand4.avif';
+import timeBrand5 from '../assets/time/time-brand5.avif';
+import timeRound from '../assets/time/time-round.avif';
+import timeSlide from '../assets/time/time-slide.avif';
+
 
 export const IMAGES = {
     HEROBG: heroBG,
@@ -40,4 +49,30 @@ export const IMAGES = {
     FEATURED2: featured2,
     FEATURED3: featured3,
     FEATURED4: featured4,
+    TIMECHART: timeChart,
+    TIMEBRAND1: timeBrand1,
+    TIMEBRAND2: timeBrand2,
+    TIMEBRAND3: timeBrand3,
+    TIMEBRAND4: timeBrand4,
+    TIMEBRAND5: timeBrand5,
+    TIMEROUND: timeRound,
+    TIMESLIDE: timeSlide,
 };
+
+export const IMAGEARRAY = [
+    {
+        imgArray: timeSlide
+    },
+    {
+        imgArray: timeSlide
+    },
+    {
+        imgArray: timeSlide
+    },
+    {
+        imgArray: timeSlide
+    },
+    {
+        imgArray: timeSlide
+    }
+];

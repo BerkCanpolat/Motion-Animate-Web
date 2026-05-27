@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import Navbar from '../../Components/common/Navbar'
 import HeroFloatingImages from '../../Components/motion/HeroFloatingImages'
 import { IMAGES } from '../../Constants/images.data'
-import { motion, scale, useScroll, useTransform } from 'motion/react'
 import Featured from '../Featured/Featured'
 import { parallaxImageData } from '../../Constants/ParallaxImageData'
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const container = {
     hidden: { opacity: 0 },
@@ -32,7 +32,7 @@ const Hero = () => {
     const scaleHero = useTransform(
         scrollYProgress,
         [0, 1.5 / section, 3 / section, 6 / section],
-        [1, 0.5, 0.5, 1]
+         [1, 0.5, 0.5, 1]
     );
 
     const imageYParallax = parallaxImageData.map(({y}) => useTransform(
@@ -43,9 +43,11 @@ const Hero = () => {
 
   return (
     <section ref={mainRef} className='px-5 py-5'>
-        <motion.div 
+        
+
+        <motion.div
         style={{ scale: scaleHero }}
-        className='bg-[linear-gradient(180deg,#056b57_0%,#005141_100%)] h-[95vh] border-8 border-[#056b57] rounded-4xl sticky top-5'>
+        className='bg-[linear-gradient(180deg,#056b57_0%,#005141_100%)] h-[80vh] md:h-[95vh] border-8 border-[#056b57] rounded-4xl sticky top-5'>            
 
             <div className='relative w-full h-full overflow-hidden rounded-4xl'>
             <div className=''>
