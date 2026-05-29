@@ -76,3 +76,21 @@ export const IMAGEARRAY = [
         imgArray: timeSlide
     }
 ];
+
+export const IMAGEBRANDS = [
+    {
+        brandsArray: timeBrand1
+    },
+    {
+        brandsArray: timeBrand2
+    },
+    {
+        brandsArray: timeBrand3
+    },
+    {
+        brandsArray: timeBrand4
+    },
+    {
+        brandsArray: timeBrand5
+    },
+]

@@ -1,6 +1,7 @@
 import React from 'react'
 import { IMAGEARRAY, IMAGES } from '../../Constants/images.data'
 import TimeRoundedSlideImages from '../../Components/motion/TimeRoundedSlideImages'
+import Brands from './Brands'
 
 const TimeRoundel = () => {
   return (
@@ -26,6 +27,7 @@ const TimeRoundel = () => {
                     </div>
             </div>
         </div>
+        <Brands />
     </section>
   )
 }
