@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/common/Navbar'
 import Hero from '../Sections/Hero/Hero'
 import TimeRoundel from '../Sections/TimeRoundel/TimeRoundel'
+import Logofolio from '../Sections/Logofolio/Logofolio'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar />
         <Hero />
         <TimeRoundel />
+        <Logofolio />
     </section>
   )
 }

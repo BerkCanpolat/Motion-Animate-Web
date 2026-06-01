@@ -28,6 +28,20 @@ import timeBrand5 from '../assets/time/time-brand5.avif';
 import timeRound from '../assets/time/time-round.avif';
 import timeSlide from '../assets/time/time-slide.avif';
 
+import logoFolio1 from '../assets/logofolio/logofolio1.avif';
+import logoFolio2 from '../assets/logofolio/logofolio2.avif';
+import logoFolio3 from '../assets/logofolio/logofolio3.avif';
+import logoFolio4 from '../assets/logofolio/logofolio4.avif';
+import logoFolio5 from '../assets/logofolio/logofolio5.avif';
+import logoFolio6 from '../assets/logofolio/logofolio6.avif';
+import logoFolio7 from '../assets/logofolio/logofolio7.avif';
+import logoFolioFolder from '../assets/logofolio/logofoliofolder.avif';
+import logofolioBanner1 from '../assets/logofolio/folderbanner1.avif';
+import logofolioBanner2 from '../assets/logofolio/folderbanner2.avif';
+import logofolioBanner3 from '../assets/logofolio/folderbanner3.avif';
+import logofolioBanner4 from '../assets/logofolio/folderbanner4.avif';
+import logofolioBanner5 from '../assets/logofolio/folderbanner5.avif';
+
 
 export const IMAGES = {
     HEROBG: heroBG,
@@ -57,6 +71,19 @@ export const IMAGES = {
     TIMEBRAND5: timeBrand5,
     TIMEROUND: timeRound,
     TIMESLIDE: timeSlide,
+    LOGOFOLIO1: logoFolio1,
+    LOGOFOLIO2: logoFolio2,
+    LOGOFOLIO3: logoFolio3,
+    LOGOFOLIO4: logoFolio4,
+    LOGOFOLIO5: logoFolio5,
+    LOGOFOLIO6: logoFolio6,
+    LOGOFOLIO7: logoFolio7,
+    LOGOFOLIOFOLDER: logoFolioFolder,
+    LOGOFOLIOBANNER1: logofolioBanner1,
+    LOGOFOLIOBANNER2: logofolioBanner2,
+    LOGOFOLIOBANNER3: logofolioBanner3,
+    LOGOFOLIOBANNER4: logofolioBanner4,
+    LOGOFOLIOBANNER5: logofolioBanner5,
 };
 
 export const IMAGEARRAY = [
