@@ -121,3 +121,27 @@ export const IMAGEBRANDS = [
         brandsArray: timeBrand5
     },
 ]
+
+export const LOGOFOLIOARRAY = [
+    {
+        logoFolio: logoFolio1
+    },
+    {
+        logoFolio: logoFolio2
+    },
+    {
+        logoFolio: logoFolio3
+    },
+    {
+        logoFolio: logoFolio4
+    },
+    {
+        logoFolio: logoFolio5
+    },
+    {
+        logoFolio: logoFolio6
+    },
+    {
+        logoFolio: logoFolio7
+    },
+]

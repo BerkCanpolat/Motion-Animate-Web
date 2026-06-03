@@ -8,7 +8,7 @@ const Brands = () => {
 
         <div className='flex flex-col md:flex-row items-center gap-20 md:gap-30'>
             {IMAGEBRANDS.map((items,i) => (
-                <img src={items.brandsArray} className='w-22 h-full object-cover' />
+                <img key={i} src={items.brandsArray} className='w-22 h-full object-cover' />
             ))}
         </div>
     </div>
