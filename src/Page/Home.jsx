@@ -10,6 +10,7 @@ const Home = () => {
       <Navbar />
         <Hero />
         <TimeRoundel />
+        
         <Logofolio />
     </section>
   )
