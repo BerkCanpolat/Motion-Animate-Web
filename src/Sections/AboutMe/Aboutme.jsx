@@ -41,7 +41,7 @@ const Aboutme = () => {
         <h1 className='uppercase text-gray-300 font-extrabold text-5xl md:text-7xl md:mb-20'>about me</h1>
         <div className='flex items-center justify-center gap-10'>
             {/* Freeze */}
-            <div className='relative'>
+            <div className='relative max-md:hidden'>
                 <img src={IMAGES.ABOUTFREEZER} className='w-85 h-160 rounded-2xl' />
                 {
                     ABOUTFREEZERARRAY.map((item,i) => (
@@ -50,7 +50,7 @@ const Aboutme = () => {
                 }
             </div>
             {/* Board */}
-            <div className='flex flex-col gap-11'>
+            <div className='flex flex-col gap-11 max-md:hidden'>
                 <div className='w-105.5 h-71 bg-amber-500 rounded-2xl'>
 
                 </div>
