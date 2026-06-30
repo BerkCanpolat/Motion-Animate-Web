@@ -42,6 +42,31 @@ import logofolioBanner3 from '../assets/logofolio/folderbanner3.avif';
 import logofolioBanner4 from '../assets/logofolio/folderbanner4.avif';
 import logofolioBanner5 from '../assets/logofolio/folderbanner5.avif';
 
+import aboutFreezer from '../assets/aboutme/about-freezer.avif';
+import aboutFreezer1 from '../assets/aboutme/about-freezer1.avif';
+import aboutFreezer2 from '../assets/aboutme/about-freezer2.avif';
+import aboutFreezer3 from '../assets/aboutme/about-freezer3.avif';
+import aboutFreezer4 from '../assets/aboutme/about-freezer4.avif';
+import aboutFreezer5 from '../assets/aboutme/about-freezer5.avif';
+import aboutFreezer6 from '../assets/aboutme/about-freezer6.avif';
+import aboutFreezer7 from '../assets/aboutme/about-freezer7.avif';
+import aboutFreezer8 from '../assets/aboutme/about-freezer8.avif';
+import aboutFreezer9 from '../assets/aboutme/about-freezer9.avif';
+
+import aboutBoard1 from '../assets/aboutme/about-board1.avif';
+import aboutBoard2 from '../assets/aboutme/about-board2.avif';
+import aboutBoard3 from '../assets/aboutme/about-board3.avif';
+
+import aboutTools from '../assets/aboutme/about-tools.avif';
+import aboutTools1 from '../assets/aboutme/about-tools1.avif';
+import aboutTools2 from '../assets/aboutme/about-tools2.avif';
+import aboutTools3 from '../assets/aboutme/about-tools3.avif';
+
+import aboutMe1 from '../assets/aboutme/about-me1.jpeg';
+import aboutMe2 from '../assets/aboutme/about-me2.jpeg';
+
+import aboutBook from '../assets/aboutme/about-book.avif';
+
 
 export const IMAGES = {
     HEROBG: heroBG,
@@ -84,6 +109,15 @@ export const IMAGES = {
     LOGOFOLIOBANNER3: logofolioBanner3,
     LOGOFOLIOBANNER4: logofolioBanner4,
     LOGOFOLIOBANNER5: logofolioBanner5,
+    ABOUTFREEZER: aboutFreezer,
+    ABOUTBOARD1: aboutBoard1,
+    ABOUTBOARD2: aboutBoard2,
+    ABOUTBOARD3: aboutBoard3,
+    ABOUTTOOLS: aboutTools,
+    ABOUTTOOLS1: aboutTools1,
+    ABOUTTOOLS2: aboutTools2,
+    ABOUTTOOLS3: aboutTools3,
+    ABOUTBOOK: aboutBook,
 };
 
 export const IMAGEARRAY = [
@@ -143,5 +177,53 @@ export const LOGOFOLIOARRAY = [
     },
     {
         logoFolio: logoFolio7
+    },
+]
+
+export const ABOUTFREEZERARRAY = [
+    {
+        aboutFreezer: aboutFreezer1,
+        className: 'top-7 left-20 -rotate-20'
+    },
+    {
+        aboutFreezer: aboutFreezer2,
+        className: 'top-36 left-20'
+    },
+    {
+        aboutFreezer: aboutFreezer3,
+        className: 'top-15 left-35 -rotate-10'
+    },
+    {
+        aboutFreezer: aboutFreezer4,
+        className: 'top-30 left-35 -rotate-25'
+    },
+    {
+        aboutFreezer: aboutFreezer5,
+        className: 'top-45 left-35'
+    },
+    {
+        aboutFreezer: aboutFreezer6,
+        className: 'top-18 left-20'
+    },
+    {
+        aboutFreezer: aboutFreezer7,
+        className: 'top-22 left-55'
+    },
+    {
+        aboutFreezer: aboutFreezer8,
+        className: 'top-40 left-55'
+    },
+    {
+        aboutFreezer: aboutFreezer9,
+        className: 'top-8 left-52'
+    },
+]
+
+export const ABOUTMEARRAY = [
+    {
+        aboutMe: aboutMe1
+    },
+    {
+        aboutMe: aboutMe2
     },
 ]
