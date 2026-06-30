@@ -37,8 +37,7 @@ const Aboutme = () => {
   return (
     <section className='md:mt-100'>
         <div className='w-fit mx-auto'>
-
-        <h1 className='uppercase text-gray-300 font-extrabold text-5xl md:text-7xl md:mb-20'>about me</h1>
+        <h1 className='uppercase text-gray-300 font-extrabold text-5xl mb-10 md:text-7xl md:mb-20'>about me</h1>
         <div className='flex items-center justify-center gap-10'>
             {/* Freeze */}
             <div className='relative max-md:hidden'>
@@ -62,7 +61,7 @@ const Aboutme = () => {
             </div>
             {/* Me */}
             <div className='flex flex-col justify-between h-158'>
-                <div className='relative w-100 h-100  rounded-2xl cursor-pointer'
+                <div className='relative w-85 h-90 md:w-100 md:h-100 max-md:mx-auto rounded-2xl cursor-pointer'
                 onClick={handleImageClick}>
                     <motion.img
                     onTap={handleTap}
@@ -108,11 +107,11 @@ const Aboutme = () => {
                             )}
                 </div>
                 <div className=''>
-                    <iframe 
+                    <iframe
+                    className='w-[92%] md:w-full max-md:mx-auto' 
                     data-testid="embed-iframe" 
                     style={{borderRadius: '12px'}} 
                     src="https://open.spotify.com/embed/artist/6RTC1abMgBC7Krg6qJQHJh?utm_source=generator&si=56d62079a7b7444c" 
-                    width="100%" 
                     height="152" 
                     frameBorder="0" 
                     allowFullScreen="" 
