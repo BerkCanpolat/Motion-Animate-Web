@@ -67,6 +67,8 @@ import aboutMe2 from '../assets/aboutme/about-me2.jpeg';
 
 import aboutBook from '../assets/aboutme/about-book.avif';
 
+import aboutPaperClip from '../assets/aboutme/about-paperclip.avif';
+
 
 export const IMAGES = {
     HEROBG: heroBG,
@@ -114,10 +116,8 @@ export const IMAGES = {
     ABOUTBOARD2: aboutBoard2,
     ABOUTBOARD3: aboutBoard3,
     ABOUTTOOLS: aboutTools,
-    ABOUTTOOLS1: aboutTools1,
-    ABOUTTOOLS2: aboutTools2,
-    ABOUTTOOLS3: aboutTools3,
     ABOUTBOOK: aboutBook,
+    ABOUTPAPERCLIP: aboutPaperClip,
 };
 
 export const IMAGEARRAY = [
@@ -225,5 +225,26 @@ export const ABOUTMEARRAY = [
     },
     {
         aboutMe: aboutMe2
+    },
+]
+
+export const TOOLSARRAY = [
+    {
+        toolsArray: aboutTools1,
+        top: -10,
+        left: 3,
+        zindex: 1
+    },
+    {
+        toolsArray: aboutTools3,
+        top: -20,
+        left: 43,
+        widht: 90,
+    },
+    {
+        toolsArray: aboutTools2,
+        top: -10,
+        right: 3,
+        zindex: 1
     },
 ]
