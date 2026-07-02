@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ABOUTFREEZERARRAY, ABOUTMEARRAY, IMAGES, TOOLSARRAY } from '../../Constants/images.data'
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, motion, useMotionValue, useSpring } from 'motion/react';
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,10 +10,6 @@ const Aboutme = () => {
     const [isHovered,setIsHovered] = useState(false);
     const [showCursor, setShowCursor] = useState(false);
     const [cursorText, setCursorText] = useState("Explore");
-    const [mousePosition, setMousePoisition] = useState({
-        x: 0,
-        y: 0
-    })
 
     const handleImageClick = () => {
         if (phase !== 'idle') return;
@@ -41,53 +37,48 @@ const Aboutme = () => {
       setIsScaled(false);
     }, 650);
   };
+  
+  // mouse eventleri
+  const mouseX = useMotionValue(0);
+const mouseY = useMotionValue(0);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-        setMousePoisition({
-            x: e.clientX,
-            y: e.clientY,
-        });
-    };
+  const handleMouseMove = (e) => {
+    mouseX.set(e.clientX);
+    mouseY.set(e.clientY);
+  };
 
-    window.addEventListener("mousemove", handleMouseMove);
+  window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-        window.removeEventListener("mousemove", handleMouseMove);
-    };
-  },[]);
+  return () => {
+    window.removeEventListener("mousemove", handleMouseMove);
+  };
+}, []);
+
+
+
 
   return (
     <section 
     onMouseEnter={() => {
-            console.log("ENTER")
             setShowCursor(true)
         }}
         onMouseLeave={() => {
-            console.log("LEAVE")
             setShowCursor(false)
         }}
-    className='md:mt-100'>
+    className='md:mt-100 cursor-none'>
 
         {showCursor && (
   <motion.div
     className="fixed pointer-events-none z-[9999]"
-    animate={{
-      left: mousePosition.x,
-      top: mousePosition.y,
-    }}
-    transition={{
-      type: "spring",
-      stiffness: 1000,
-      damping: 60,
+    style={{
+      left: mouseX,
+      top: mouseY,
     }}
   >
     <div className="flex items-center gap-3">
-      
       <motion.div
-        animate={{
-          rotate: -20,
-        }}
+        animate={{ rotate: -20 }}
         className="
           w-0 h-0
           border-t-[12px]
@@ -99,18 +90,19 @@ const Aboutme = () => {
         "
       />
 
-      <div className="
-        bg-blue-600
-        text-white
-        px-8
-        py-4
-        rounded-full
-        text-lg
-        whitespace-nowrap
-      ">
+      <div
+        className="
+          bg-blue-600
+          text-white
+          px-8
+          py-4
+          rounded-full
+          text-lg
+          whitespace-nowrap
+        "
+      >
         {cursorText}
       </div>
-
     </div>
   </motion.div>
 )}
@@ -128,7 +120,11 @@ const Aboutme = () => {
                 <img src={IMAGES.ABOUTFREEZER} className='w-85 h-160 rounded-2xl' />
                 {
                     ABOUTFREEZERARRAY.map((item,i) => (
-                        <img key={i} src={item.aboutFreezer} className={`w-15 absolute cursor-pointer object-cover ${item.className}`} />
+                        <motion.img 
+                        dragElastic={1}
+                        dragConstraints={{bottom:0,left:0,right:0,top:0}}
+                        drag
+                        key={i} src={item.aboutFreezer} className={`w-15 absolute cursor-none object-cover ${item.className}`} />
                     ))
                 }
             </div>
@@ -196,7 +192,7 @@ const Aboutme = () => {
                     animate={{ scale: isScaled ? 0.9 : 1 }}
       transition={{ duration: 0.3 }}
                         src={ABOUTMEARRAY[currentIndex].aboutMe}
-                        className='absolute inset-0 w-full h-full object-cover rounded-2xl'
+                        className='absolute inset-0 w-full h-full object-cover rounded-2xl cursor-none'
                         style={{ zIndex: phase === 'up' ? 0 : 1 }}
                     />
 
