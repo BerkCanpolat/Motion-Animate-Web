@@ -248,3 +248,23 @@ export const TOOLSARRAY = [
         zindex: 1
     },
 ]
+
+export const ABOUTBOARDARRAY = [
+    {
+        aboutboard: aboutBoard1,
+        rotate: -15,
+        w: 180,
+        w2: 140,
+    },
+    {
+        aboutboard: aboutBoard2,
+        w: 130,
+        w2: 125,
+    },
+    {
+        aboutboard: aboutBoard3,
+        rotate: 15,
+        w: 180,
+        w2: 140,
+    },
+]
