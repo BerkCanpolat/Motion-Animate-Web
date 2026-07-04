@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ABOUTBOARDARRAY, ABOUTFREEZERARRAY, ABOUTMEARRAY, IMAGES, TOOLSARRAY } from '../../Constants/images.data'
 import { AnimatePresence, motion, useMotionValue, useSpring } from 'motion/react';
-import CustomCursor from '../../Components/ui/customCursor';
+import CustomCursor from '../../Components/ui/CustomCursor';
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
