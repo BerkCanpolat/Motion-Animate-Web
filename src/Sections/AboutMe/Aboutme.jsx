@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ABOUTBOARDARRAY, ABOUTFREEZERARRAY, ABOUTMEARRAY, IMAGES, TOOLSARRAY } from '../../Constants/images.data'
 import { AnimatePresence, motion, useMotionValue, useSpring } from 'motion/react';
 import CustomCursor from '../../Components/ui/CustomCursor';
+import ScrollColorText from '../../Components/motion/CustomScrollText';
 
 const Aboutme = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -271,6 +272,10 @@ style={{ perspective: 700 }} className="relative z-30">
             </div>
         </div>
         </div>
+
+        <ScrollColorText />
+
+        <div className='h-screen'/>
     </section>
   )
 }
