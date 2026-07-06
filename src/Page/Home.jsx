@@ -5,6 +5,7 @@ import TimeRoundel from '../Sections/TimeRoundel/TimeRoundel'
 import Logofolio from '../Sections/Logofolio/Logofolio'
 import Aboutme from '../Sections/AboutMe/Aboutme'
 import Archive from '../Sections/Archive/Archive'
+import Contact from '../Sections/Contact/Contact'
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         <Logofolio />
         <Aboutme />
         <Archive />
-        <TimeRoundel />
+        <Contact />
     </section>
   )
 }
