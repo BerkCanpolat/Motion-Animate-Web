@@ -22,21 +22,21 @@ const Archive = () => {
 const slideX = useTransform(
   sliderProgress,
   [0, 0.8],
-  ["5%", "-50%"]
+  ["4%", "-50%"]
 );
 
-const deneme1 = useTransform(
+const airY = useTransform(
     sliderProgress,
     [0,0.70],
     ["-90%", "220%"]
 );
-const deneme2 = useTransform(
+const airX = useTransform(
     sliderProgress,
     [0,0.70],
     ["500%","70%"]
 );
 
-const deneme3 = useTransform(
+const airScale = useTransform(
     sliderProgress,
     [0,0.70],
     [1.8,0.5]
@@ -57,12 +57,12 @@ const shadowFilter = useTransform(shadowBlurPx, (b) => `brightness(0) blur(${b}p
   return (
     <div className='mt-70'>
 
-        <div className='ml-5 md:ml-67'>
+        <div className='ml-5 md:ml-55.5'>
 
        <h1 className='uppercase text-gray-300 font-extrabold text-5xl mb-10 md:text-7xl md:mb-20'>archive</h1>
 
         </div>
-        <div className='ml-0 md:ml-18'>
+        <div>
        <ScrollColorText />
         </div>
         <div
@@ -72,7 +72,7 @@ const shadowFilter = useTransform(shadowBlurPx, (b) => `brightness(0) blur(${b}p
 
       <div className='sticky top-0 h-screen overflow-hidden px-5'>
 
-        <motion.div style={{ y: deneme1, x: deneme2, scale: deneme3 }} className='absolute z-20 max-md:hidden'>
+        <motion.div style={{ y: airY, x: airX, scale: airScale }} className='absolute z-20 max-md:hidden'>
 
             <motion.div
     style={{
