@@ -274,8 +274,6 @@ style={{ perspective: 700 }} className="relative z-30">
         </div>
 
         <ScrollColorText />
-
-        <div className='h-screen'/>
     </section>
   )
 }
