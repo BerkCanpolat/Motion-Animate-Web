@@ -64,3 +64,16 @@ I'm a frontend developer learning React, TypeScript, and motion design in depth.
 ## License
 
 This project is for personal/portfolio use. Feel free to browse the code for learning purposes.
+
+
+
+
+
+
+
+
+https://github.com/user-attachments/assets/20397bf0-2e37-4381-8f9f-4ba5becadc45
+
+
+
+
