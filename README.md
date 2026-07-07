@@ -2,7 +2,7 @@
 
 A personal portfolio built as a hands-on playground for learning **Framer Motion** (`motion` package) in depth — every section exists primarily to explore a different animation technique, from scroll-linked transforms to spring physics and interactive hover states.
 
-** LIVE DEMO ** ----> https://portfolio-animation-weld.vercel.app/#
+** LIVE DEMO ** ----> https://portfolio-animation-weld.vercel.app/
 
 The design that inspired me for this project is: https://www.wallofportfolios.in/portfolios/viha-shah/
 
